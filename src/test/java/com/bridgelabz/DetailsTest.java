@@ -17,26 +17,32 @@ public class DetailsTest {
 
     @Test
     public void firstname() {
-        String firstname="Sumit";
+        String firstname = "Sandeep";
         assertTrue(ValidateDetailsTest.name(firstname));
     }
+
     @Test
     public void lastname() {
-        String lastname="Kumar";
+        String lastname = "Varma";
         assertTrue(ValidateDetailsTest.name(lastname));
     }
+
     @Test
     public void mail() {
-        String mail="ramitkumar609@gmail.com";
+        String mail = "karanvarma619@gmail.com";
         assertTrue(ValidateDetailsTest.mail(mail));
-    }@Test
-    public void phonenumber() {
-        String phonenumber="91 9910112233";
-        assertTrue(ValidateDetailsTest.phonenumber(phonenumber));
-    }@Test
-    public void password() {
-        String password="kumar@1234";
-        assertTrue(ValidateDetailsTest.password(password));
     }
 
+    @Test
+    public void phonenumber() {
+        String phonenumber = "91 9004223344";
+        assertTrue(ValidateDetailsTest.phonenumber(phonenumber));
+    }
+
+    @Test
+    public void password() {
+        String password = "Karan@1234";
+        assertTrue(ValidateDetailsTest.password(password));
+    }
 }
+
