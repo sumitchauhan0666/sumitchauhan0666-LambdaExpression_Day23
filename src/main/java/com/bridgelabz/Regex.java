@@ -11,7 +11,7 @@ public class Regex
     }
 
     public void firstNameInput() {
-        String firstNameInput = "Piyush";
+        String firstNameInput = "Sumit";
         String regex = "^[[a-z]{1}A-Z]{1,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(firstNameInput);
@@ -25,7 +25,7 @@ public class Regex
     public void lastNameInput()
     {
 
-        String lastNameInput = "Verma";
+        String lastNameInput = "Kumar";
         String regex = "^[[a-z]{1}A-Z]{2,}$";
 
         Pattern pattern = Pattern.compile(regex);
