@@ -14,6 +14,18 @@ public class Regex {
         regex.passwordInput2();
     }
 
+    protected static void password(String password) {
+    }
+
+    protected static void phonenumber(String phone_number) {
+    }
+
+    protected static void mail(String mail_id) {
+    }
+
+    protected static void name(String last_name) {
+    }
+
     public void firstNameInput() {
         String firstNameInput = "Sumit";
         String regex = "^[[a-z]{1}A-Z]{1,}$";
