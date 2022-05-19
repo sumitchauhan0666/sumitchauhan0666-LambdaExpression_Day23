@@ -12,6 +12,8 @@ public class Regex {
         regex.numberInput();
         regex.passwordInput1();
         regex.passwordInput2();
+        regex.passwordInput3();
+
     }
 
     public void firstNameInput() {
@@ -87,5 +89,17 @@ public class Regex {
             System.out.println("\n invalid rule 2  not passed ");
         }
     }
+    public void passwordInput3() {
+        String passwordInput3 = "SumitVerma66";
+        String regex = "^[a-zA-Z]{8,}[0-9]{1,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(passwordInput3);
+        if (matcher.matches()) {
+            System.out.println("\n VALID  rule 3 passed " );
+        } else {
+            System.out.println("\n invalid rule 3  not passed ");
+        }
+    }
+
 }
 
