@@ -7,13 +7,12 @@ public class Regex
     public static void main( String[] args ) {
         Regex regex = new Regex();
         regex.firstNameInput();
+        regex.lastNameInput();
     }
 
     public void firstNameInput() {
-
-        String firstNameInput = "Sumit";
+        String firstNameInput = "Piyush";
         String regex = "^[[a-z]{1}A-Z]{1,}$";
-
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(firstNameInput);
         if (matcher.matches()) {
@@ -23,4 +22,18 @@ public class Regex
         }
     }
 
+    public void lastNameInput()
+    {
+
+        String lastNameInput = "Verma";
+        String regex = "^[[a-z]{1}A-Z]{2,}$";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lastNameInput);
+        if (matcher.matches()) {
+            System.out.println("\n VALID  lastName " );
+        } else {
+            System.out.println("\n invalid lastName");
+        }
+    }
 }
