@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DetailsTest {
 
-
     @Test
     public void moodtest() {
         String expectedresult = "HAPPY";
